@@ -1,0 +1,7 @@
+.MainChat
+  - @posts.each do |post|
+    .ContentPost
+      %p.text
+        = post.text 
+      %span.name  
+        = post.name
