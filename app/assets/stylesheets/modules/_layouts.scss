@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #fff8dc;
+}
+.HeaderNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+  height: 100px;
+  width: 100vw;
+  .title {
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: bolder;
+    .SubTitle {
+      font-size: 15px;
+    }
+    a {
+      text-decoration: none;
+      color: salmon;
+    }
+  }
+  .UserNav {
+    padding: 8px 20px;
+    font-size: 14px;
+    border: 2px solid #57c3e9;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 3px;
+    display: inline-block;
+    a {
+      color: #57c3e9;
+      text-decoration: none;
+    }
+  }
+}
+
