@@ -12,9 +12,9 @@
       .HeaderNav
         %h1.title 
           %p.SubTitle 子どもの成長をかんがえる
-          = link_to 'BabyFood', url: "#"
+          = link_to 'BabyFood', posts_path
         .UserNav
-          = link_to "レシピを書く", url: "#"
+          = link_to "レシピを書く", new_post_path
     = yield
     %footer
       %p Copyright BabyFood 2020.

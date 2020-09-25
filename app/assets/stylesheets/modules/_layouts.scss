@@ -3,6 +3,7 @@
 }
 body {
   background-color: #fff8dc;
+  width: 100vw;
 }
 .HeaderNav {
   display: flex;
@@ -10,7 +11,7 @@ body {
   align-items: center;
   padding: 0 80px;
   height: 100px;
-  width: 100vw;
+  background-color: #f5deb3;
   .title {
     font-size: 30px;
     font-family: monospace;
@@ -36,5 +37,9 @@ body {
       text-decoration: none;
     }
   }
+}
+
+.footer {
+  height: 50px;
 }
 
