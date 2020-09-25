@@ -1,6 +1,9 @@
 .MainChat
   - @posts.each do |post|
     .ContentPost
+      .tag
+        %span
+        = = image_tag 'src', alt: '', height: '', width: '', class: ''
       %p.text
         = post.text 
       %span.name  
