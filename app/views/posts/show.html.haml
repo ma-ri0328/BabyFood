@@ -1,0 +1,17 @@
+.wrapper
+  = render "side_bar"
+  .MainChat
+    .ContentPost
+      .menu
+        %span
+        = image_tag 'arrow_top.png'
+        %ul.menu__list
+          %li
+          = link_to '編集', edit_post_path(@post.id)
+          %li
+          = link_to '削除', post_path(@post.id), method: :delete
+      %p
+      = @post.text   
+      %span.name
+      = @post.name
+    

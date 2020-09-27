@@ -1,9 +1,16 @@
 .MainChat
   - @posts.each do |post|
     .ContentPost
-      .tag
+      .menu
         %span
-        = = image_tag 'src', alt: '', height: '', width: '', class: ''
+        = image_tag 'arrow_top.png'
+        %ul.menu__list
+          %li
+          =link_to '詳細', post_path(post.id)
+          %li
+          = link_to '編集', edit_post_path(post.id)
+          %li
+          =link_to '削除', post_path(post.id), method: :delete
       %p.text
         = post.text 
       %span.name  
